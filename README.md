@@ -56,6 +56,36 @@
 # ER
 ![f9b9b1652db4b69b9c6ad8d84cc78eff](https://user-images.githubusercontent.com/72023246/99548632-330e3a80-29fc-11eb-8af6-6808051dd417.png)
 
+# Table design
+
+## artist table
+
+| Column             | Type    | Options                  |
+| ------------------ | ------  | ------------------------ |
+| email              | string  | null: false, default: "" |
+| encrypted_password | string  | null: false, default: "" |
+| name               | string  | null: false              |
+| job_request        | text    | null: false              |
+| arttype_id         | integer | null: false              |
+| arttouch_id        | integer | null: false              |
+| profile            | text    | null: false              |
+| price_id           | integer | null: false              |
+| line               | string  |                          |
+| twitter            | string  |                          |
+
+### Association
+- has_many :arts
+
+## arts table
+
+| Column | Type       | Options           |
+| ------ | ---------- | ----------------- |
+| artist | references | foreign_key: true |
+
+### Association
+
+- belongs_to :artist
+
 # Scheduled to be implemented
 - [ ] マッチング機能の強化
 
