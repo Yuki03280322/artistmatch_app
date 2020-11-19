@@ -54,7 +54,8 @@
 * ランキングやレビューではなく、あくまで自分の求める似顔絵を描ける絵師さんとマッチング
 
 # ER
-![f9b9b1652db4b69b9c6ad8d84cc78eff](https://user-images.githubusercontent.com/72023246/99548632-330e3a80-29fc-11eb-8af6-6808051dd417.png)
+![58271df1f930a3eeb817f0237e7b3bee](https://user-images.githubusercontent.com/72023246/99625953-9b98fe00-2a74-11eb-83b4-98426da660ee.png)
+
 
 # Table design
 
@@ -65,6 +66,7 @@
 | email              | string  | null: false, default: "" |
 | encrypted_password | string  | null: false, default: "" |
 | name               | string  | null: false              |
+| profile_image_id   | string  | null: false              |
 | job_request        | text    | null: false              |
 | arttype_id         | integer | null: false              |
 | arttouch_id        | integer | null: false              |
@@ -117,3 +119,7 @@
 * MySQL
 * devise
 * Font Awesome
+* refile
+* refile_mini_magick
+* bulma-rails
+* pry-rails
