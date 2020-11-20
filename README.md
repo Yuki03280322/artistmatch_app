@@ -66,7 +66,7 @@
 | email              | string  | null: false, default: "" |
 | encrypted_password | string  | null: false, default: "" |
 | name               | string  | null: false              |
-| profile_image_id   | string  | null: false              |
+| profile_image_id   | string  |                          |
 | job_request        | text    | null: false              |
 | arttype_id         | integer | null: false              |
 | arttouch_id        | integer | null: false              |
