@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2020_11_19_062351) do
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "name", null: false
-    t.string "profile_image_id", null: false
+    t.string "profile_image_id"
     t.text "job_request", null: false
     t.integer "arttype_id", null: false
     t.integer "arttouch_id", null: false

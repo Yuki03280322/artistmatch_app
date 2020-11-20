@@ -54,12 +54,12 @@
 * ランキングやレビューではなく、あくまで自分の求める似顔絵を描ける絵師さんとマッチング
 
 # ER
-![58271df1f930a3eeb817f0237e7b3bee](https://user-images.githubusercontent.com/72023246/99625953-9b98fe00-2a74-11eb-83b4-98426da660ee.png)
+![8769d32ddaf06d2d97d119f0b8720a80](https://user-images.githubusercontent.com/72023246/99743952-17995180-2b1a-11eb-9117-bb9c11b3e8fe.png)
 
 
 # Table design
 
-## artist table
+## artists table
 
 | Column             | Type    | Options                  |
 | ------------------ | ------  | ------------------------ |
@@ -80,9 +80,11 @@
 
 ## arts table
 
-| Column | Type       | Options           |
-| ------ | ---------- | ----------------- |
-| artist | references | foreign_key: true |
+| Column      | Type       | Options           |
+| ----------- | ---------- | ----------------- |
+| artist      | references | foreign_key: true |
+| arttype_id  | integer    | null: false       |
+| arttouch_id | integer    | null: false       |
 
 ### Association
 
@@ -123,3 +125,4 @@
 * refile_mini_magick
 * bulma-rails
 * pry-rails
+* Active Hash
