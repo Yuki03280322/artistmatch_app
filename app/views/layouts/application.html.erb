@@ -21,10 +21,10 @@
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
           <div class="navbar-item">
-            <%= link_to "似顔絵師さん一覧", artists_path, class: "button is-success is-light" %>
+            <%= link_to "似顔絵師さん一覧", artists_path, class: "button is-dark" %>
           </div>
           <div class="navbar-item">
-            <%= link_to "似顔絵一覧", "#", class: "button is-success is-light" %>
+            <%= link_to "似顔絵一覧", "#", class: "button is-dark" %>
           </div>
         </div>
         <div class="navbar-end">
@@ -33,13 +33,16 @@
           </a>
           <% if artist_signed_in? %>
             <div class="navbar-item">
-              <%= link_to "ログアウト", destroy_artist_session_path, method: :delete, class: "button is-warning is-light" %>
+              <%= link_to "マイページ", "#", class: "button is-light" %>
+            </div>
+            <div class="navbar-item">
+              <%= link_to "ログアウト", destroy_artist_session_path, method: :delete, class: "button is-light" %>
             </div>
           <% else %>
             <div class="navbar-item">
-              <%= link_to "ログイン", new_artist_session_path, class: "button is-warning is-ligtht" %>
+              <%= link_to "ログイン", new_artist_session_path, class: "button is-light" %>
             <div class="navbar-item">
-              <%= link_to "新規登録", new_artist_registration_path, class: "button is-warning is-light" %>
+              <%= link_to "新規登録", new_artist_registration_path, class: "button is-light" %>
             </div>
           <% end %>
         </div>

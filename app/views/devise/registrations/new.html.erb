@@ -94,25 +94,27 @@
             </span>
           </p>
         </div>
-
-        <div class="select">
-          <div class="select is-primary">
+        
+        <div class="field is-grouped">
+          <div class="control">
             <%= f.label :arttype_id, "得意な絵の種類", class: "label" %>
-            <%= f.collection_select(:arttype_id, Arttype.all, :id, :name, {} )%>
+            <div class="select is-primary">
+              <%= f.collection_select(:arttype_id, Arttype.all, :id, :name, {} )%>
+            </div>
           </div>
-        </div>
 
-        <div class="select">
-          <div class="select is-primary">
+          <div class="control">
             <%= f.label :arttouch_id, "得意タッチ", class: "label" %>
-            <%= f.collection_select(:arttouch_id, Arttouch.all, :id, :name, {} )%>
+            <div class="select is-primary">
+              <%= f.collection_select(:arttouch_id, Arttouch.all, :id, :name, {} )%>
+            </div>
           </div>
-        </div>
 
-        <div class="select">
-          <div class="select is-primary">
-            <%= f.label :price_id, "1枚の価格", class: "label" %>
-            <%= f.collection_select(:price_id, Price.all, :id, :name, {} )%>
+          <div class="control">
+             <%= f.label :price_id, "1枚の価格", class: "label" %>
+             <div class="select is-primary">
+               <%= f.collection_select(:price_id, Price.all, :id, :name, {} )%>
+             </div>
           </div>
         </div>
 
