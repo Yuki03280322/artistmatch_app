@@ -1,29 +1,130 @@
-<h2>Sign up</h2>
-
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+<section class="hero is-primary is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        新規登録
+      </h1>
+      <h2 class="subtitle">
+        Welcome great caricature artist!
+      </h2>
+    </div>
   </div>
+</section>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-5">
+        <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <%= render "devise/shared/error_messages", resource: resource %>
+
+        <div class="field">
+          <%= f.label :name, class: "label" %>
+          <p class="control has-icons-left">
+            <%= f.text_field :name, autofocus: true, autocomplete: "name", :placeholder => "artistname", class: "input" %>
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+          </p>
+        </div>
+
+        <div class="field">
+          <%= f.label :email, class: "label" %>
+          <p class="control has-icons-left">
+            <%= f.email_field :email, autofocus: true, autocomplete: "email", :placeholder => "email", class: "input" %>
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+          </p>
+        </div>
+
+        <div class="field">
+          <%= f.label :password, class: "label" %>
+          <% if @minimum_password_length %>
+          <p>(<%= @minimum_password_length %> 文字以上)</p>
+          <% end %>
+          <p class="control has-icons-left">
+          <%= f.password_field :password, autocomplete: "new-password", :placeholder => "password", class: "input" %>
+            <span class="icon is-small is-left">
+              <i class="fas fa-lock"></i>
+            </span>
+          </p>
+        </div>
+
+        <div class="field">
+          <%= f.label :password_confirmation, class: "label" %>
+          <p class="control has-icons-left">
+            <%= f.password_field :password_confirmation, autocomplete: "new-password", :placeholder => "password confirmation", class: "input" %>
+            <span class="icon is-small is-left">
+              <i class="fas fa-lock"></i>
+            </span>
+          </p>
+        </div>
+
+        <div class="field">
+          <%= f.label :profile, class: "label" %>
+          <p class="control has-icons-left">
+            <%= f.text_area :profile, autofocus: true, autocomplete: "profile", :placeholder => "例:ポップな水彩画を描くのが得意です", class: "textarea", rows:"3" %>
+          </p>
+        </div>
+
+        <div class="field">
+          <%= f.label :job_request, "仕事の依頼方法", class: "label" %>
+          <p class="control has-icons-left">
+            <%= f.text_area :job_request, autofocus: true, autocomplete: "job_request", :placeholder => "例:emailにて承ります", class: "textarea", rows:"3" %>
+          </p>
+        </div>
+
+        <div class="field">
+          <%= f.label :line, "(任意)仕事依頼にLineを希望する方のみidを記入", class: "label" %>
+          <p class="control has-icons-left">
+            <%= f.text_field :line, autofocus: true, autocomplete: "line", :placeholder => "例:artistmatch1234", class: "input" %>
+            <span class="icon is-small is-left">
+              <i class="fab fa-line"></i>
+            </span>
+          </p>
+        </div>
+
+        <div class="field">
+          <%= f.label :twitter, "(任意)仕事依頼にTwitterを希望する方のみユーザー名を記入", class: "label" %>
+          <p class="control has-icons-left">
+            <%= f.text_field :twitter, autofocus: true, autocomplete: "twitter", :placeholder => "例:@artistmatch", class: "input" %>
+            <span class="icon is-small is-left">
+              <i class="fab fa-twitter-square"></i>
+            </span>
+          </p>
+        </div>
+        
+        <div class="field is-grouped">
+          <div class="control">
+            <%= f.label :arttype_id, "得意な絵の種類", class: "label" %>
+            <div class="select is-primary">
+              <%= f.collection_select(:arttype_id, Arttype.all, :id, :name, {} )%>
+            </div>
+          </div>
+
+          <div class="control">
+            <%= f.label :arttouch_id, "得意タッチ", class: "label" %>
+            <div class="select is-primary">
+              <%= f.collection_select(:arttouch_id, Arttouch.all, :id, :name, {} )%>
+            </div>
+          </div>
+
+          <div class="control">
+             <%= f.label :price_id, "1枚の価格", class: "label" %>
+             <div class="select is-primary">
+               <%= f.collection_select(:price_id, Price.all, :id, :name, {} )%>
+             </div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <%= f.submit "新規登録", class: "button is-success" %>
+        </div>
+        <% end %>
+
+        <%= render "devise/shared/links" %>
+      </div>
+    </div>
   </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</section>

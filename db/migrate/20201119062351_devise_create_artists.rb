@@ -7,7 +7,7 @@ class DeviseCreateArtists < ActiveRecord::Migration[6.0]
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
       t.string :name,               null: false
-      t.string :profile_image_id,   null: false
+      t.string :profile_image_id
       t.text :job_request,          null: false
       t.integer :arttype_id,        null: false
       t.integer :arttouch_id,       null: false

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
   devise_for :artists
-  root to: "home#index"
+  root to: "homes#index"
+  resources :artists, only: :index
 end
