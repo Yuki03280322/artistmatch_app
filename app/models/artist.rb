@@ -5,6 +5,7 @@ class Artist < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :arts, dependent: :destroy
+  attachment :profile_image
 
   with_options presence: true do
     validates :name
