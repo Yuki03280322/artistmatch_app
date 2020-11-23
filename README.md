@@ -56,7 +56,7 @@
 * ランキングやレビューではなく、あくまで自分の求める似顔絵を描ける絵師さんとマッチング
 
 # ER
-![8769d32ddaf06d2d97d119f0b8720a80](https://user-images.githubusercontent.com/72023246/99743952-17995180-2b1a-11eb-9117-bb9c11b3e8fe.png)
+![7313f4458eb4d73aa73ba503eee126e3](https://user-images.githubusercontent.com/72023246/99934122-6fe18500-2da0-11eb-869e-88467d483dd6.png)
 
 
 # Table design
@@ -85,6 +85,7 @@
 | Column      | Type       | Options           |
 | ----------- | ---------- | ----------------- |
 | artist      | references | foreign_key: true |
+| image_id    | string     | null: false       |
 | arttype_id  | integer    | null: false       |
 | arttouch_id | integer    | null: false       |
 
