@@ -21,7 +21,7 @@
         <div class="field">
           <%= f.label :name, class: "label" %>
           <p class="control has-icons-left">
-            <%= f.text_field :name, autofocus: true, autocomplete: "name", :placeholder => "artistname", class: "input" %>
+            <%= f.text_field :name, autofocus: true, autocomplete: "name", :placeholder => "artistname", class: "input is-success" %>
             <span class="icon is-small is-left">
               <i class="fas fa-user"></i>
             </span>
@@ -31,7 +31,7 @@
         <div class="field">
           <%= f.label :email, class: "label" %>
           <p class="control has-icons-left">
-            <%= f.email_field :email, autofocus: true, autocomplete: "email", :placeholder => "email", class: "input" %>
+            <%= f.email_field :email, autofocus: true, autocomplete: "email", :placeholder => "email", class: "input is-success" %>
             <span class="icon is-small is-left">
               <i class="fas fa-envelope"></i>
             </span>
@@ -44,7 +44,7 @@
           <p>(<%= @minimum_password_length %> 文字以上)</p>
           <% end %>
           <p class="control has-icons-left">
-          <%= f.password_field :password, autocomplete: "new-password", :placeholder => "password", class: "input" %>
+          <%= f.password_field :password, autocomplete: "new-password", :placeholder => "password", class: "input is-success" %>
             <span class="icon is-small is-left">
               <i class="fas fa-lock"></i>
             </span>
@@ -54,7 +54,7 @@
         <div class="field">
           <%= f.label :password_confirmation, class: "label" %>
           <p class="control has-icons-left">
-            <%= f.password_field :password_confirmation, autocomplete: "new-password", :placeholder => "password confirmation", class: "input" %>
+            <%= f.password_field :password_confirmation, autocomplete: "new-password", :placeholder => "password confirmation", class: "input is-success" %>
             <span class="icon is-small is-left">
               <i class="fas fa-lock"></i>
             </span>
@@ -63,22 +63,18 @@
 
         <div class="field">
           <%= f.label :profile, class: "label" %>
-          <p class="control has-icons-left">
-            <%= f.text_area :profile, autofocus: true, autocomplete: "profile", :placeholder => "例:ポップな水彩画を描くのが得意です", class: "textarea", rows:"3" %>
-          </p>
+          <%= f.text_area :profile, autofocus: true, autocomplete: "profile", :placeholder => "例:ポップな水彩画を描くのが得意です", class: "textarea is-success", rows:"3" %>
         </div>
 
         <div class="field">
           <%= f.label :job_request, "仕事の依頼方法", class: "label" %>
-          <p class="control has-icons-left">
-            <%= f.text_area :job_request, autofocus: true, autocomplete: "job_request", :placeholder => "例:emailにて承ります", class: "textarea", rows:"3" %>
-          </p>
+          <%= f.text_area :job_request, autofocus: true, autocomplete: "job_request", :placeholder => "例:emailにて承ります", class: "textarea is-success", rows:"3" %>
         </div>
 
         <div class="field">
           <%= f.label :line, "(任意)仕事依頼にLineを希望する方のみidを記入", class: "label" %>
           <p class="control has-icons-left">
-            <%= f.text_field :line, autofocus: true, autocomplete: "line", :placeholder => "例:artistmatch1234", class: "input" %>
+            <%= f.text_field :line, autofocus: true, autocomplete: "line", :placeholder => "例:artistmatch1234", class: "input is-success" %>
             <span class="icon is-small is-left">
               <i class="fab fa-line"></i>
             </span>
@@ -88,7 +84,7 @@
         <div class="field">
           <%= f.label :twitter, "(任意)仕事依頼にTwitterを希望する方のみユーザー名を記入", class: "label" %>
           <p class="control has-icons-left">
-            <%= f.text_field :twitter, autofocus: true, autocomplete: "twitter", :placeholder => "例:@artistmatch", class: "input" %>
+            <%= f.text_field :twitter, autofocus: true, autocomplete: "twitter", :placeholder => "例:@artistmatch", class: "input is-success" %>
             <span class="icon is-small is-left">
               <i class="fab fa-twitter-square"></i>
             </span>

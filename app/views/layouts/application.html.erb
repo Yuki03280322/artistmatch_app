@@ -33,7 +33,7 @@
           </a>
           <% if artist_signed_in? %>
             <div class="navbar-item">
-              <%= link_to "マイページ", "#", class: "button is-light" %>
+              <%= link_to "編集", edit_artist_path(current_artist.id), class: "button is-light" %>
             </div>
             <div class="navbar-item">
               <%= link_to "ログアウト", destroy_artist_session_path, method: :delete, class: "button is-light" %>
