@@ -2,7 +2,7 @@
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
-        似顔絵登録フォーム
+        似顔絵登録＆削除フォーム
       </h1>
       <h2 class="subtitle">
          Welcome great caricature artist!
@@ -41,6 +41,33 @@
           <%= f.submit "似顔絵登録", class: "button is-success" %>
         <% end %>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-multiline">
+      <% @arts.each do |art| %>
+        <div class="column is-3">
+          <div class="card">
+            <div class="card-content">
+              <div class="card-image">
+                <figure class="image is-1by1">
+                  <%= attachment_image_tag art, :image %>
+                </figure>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <div class="title"><%= link_to "削除", art_path(art.id), method: :delete %></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
     </div>
   </div>
 </section>

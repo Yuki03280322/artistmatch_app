@@ -2,12 +2,13 @@ class ArtsController < ApplicationController
 
   def new
     @art = Art.new
+    @arts = Art.all
   end
 
   def create
     @art = Art.create(art_params)
     if @art.save
-      redirect_to action: :index
+      redirect_to action: :new
     else
       render :new
     end
@@ -15,6 +16,12 @@ class ArtsController < ApplicationController
 
   def index
     @arts = Art.all
+  end
+
+  def destroy
+    art = Art.find(params[:id])
+    art.destroy
+    redirect_to action: :new
   end
 
   private
