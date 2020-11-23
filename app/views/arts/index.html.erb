@@ -1,0 +1,18 @@
+<section class="hero is-primary is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        似顔絵一覧
+      </h1>
+      <h2 class="subtitle">
+         I hope I'll have a close relationship with artists!
+      </h2>
+    </div>
+  </div>
+</section>
+
+<% @arts.each do |art| %>
+
+  <%= attachment_image_tag art, :image %>
+
+<% end %>
