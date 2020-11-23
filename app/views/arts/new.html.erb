@@ -1,0 +1,46 @@
+<section class="hero is-primary is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        似顔絵登録フォーム
+      </h1>
+      <h2 class="subtitle">
+         Welcome great caricature artist!
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="columns is-6">
+        <%= form_with model: @art, url: arts_path, local: true do |f| %>
+
+          <div class="field">
+            <%= f.label :image, "似顔絵", class: "label" %>
+            <%= f.attachment_field :image, class: "input is-success" %>
+          </div>
+
+          <div class="field is-grouped">
+            <div class="control">
+              <%= f.label :arttype_id, "この絵の種類", class: "label" %>
+              <div class="select is-primary">
+                <%= f.collection_select(:arttype_id, Arttype.all, :id, :name, {} )%>
+              </div>
+            </div>
+
+            <div class="control">
+              <%= f.label :arttouch_id, "この絵のタッチ", class: "label" %>
+              <div class="select is-primary">
+                <%= f.collection_select(:arttouch_id, Arttouch.all, :id, :name, {} )%>
+              </div>
+            </div>
+          </div>
+
+          <%= f.submit "似顔絵登録", class: "button is-success" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>

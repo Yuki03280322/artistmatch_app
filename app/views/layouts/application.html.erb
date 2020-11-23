@@ -24,7 +24,7 @@
             <%= link_to "似顔絵師さん一覧", artists_path, class: "button is-light" %>
           </div>
           <div class="navbar-item">
-            <%= link_to "似顔絵一覧", "#", class: "button is-light" %>
+            <%= link_to "似顔絵一覧", "arts#index", class: "button is-light" %>
           </div>
         </div>
         <div class="navbar-end">
@@ -34,6 +34,9 @@
           <% if artist_signed_in? %>
             <div class="navbar-item">
               <%= link_to "編集", edit_artist_path(current_artist.id), class: "button is-light" %>
+            </div>
+            <div class="navbar-item">
+              <%= link_to "似顔絵登録", new_art_path, class: "button is-light" %>
             </div>
             <div class="navbar-item">
               <%= link_to "ログアウト", destroy_artist_session_path, method: :delete, class: "button is-light" %>
