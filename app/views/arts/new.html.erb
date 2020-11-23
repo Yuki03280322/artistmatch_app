@@ -49,24 +49,26 @@
   <div class="container">
     <div class="columns is-multiline">
       <% @arts.each do |art| %>
-        <div class="column is-3">
-          <div class="card">
-            <div class="card-content">
-              <div class="card-image">
-                <figure class="image is-1by1">
-                  <%= attachment_image_tag art, :image %>
-                </figure>
+        <% if current_artist.id == art.artist_id %>
+          <div class="column is-6">
+            <div class="card">
+              <div class="card-content">
+                <div class="card-image">
+                  <figure class="image is-1by1">
+                    <%= attachment_image_tag art, :image %>
+                  </figure>
+                </div>
               </div>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-content">
-                  <div class="title"><%= link_to "削除", art_path(art.id), method: :delete %></div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <div class="title"><%= link_to "削除", art_path(art.id), method: :delete %></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        <% end %>
       <% end %>
     </div>
   </div>
