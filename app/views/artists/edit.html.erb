@@ -20,7 +20,7 @@
           <div class="field">
             <%= f.label :name, class: "label" %>
             <p class="control has-icons-left">
-              <%= f.text_field :name, class: "input" %>
+              <%= f.text_field :name, class: "input is-success" %>
               <span class="icon is-small is-left">
                 <i class="fas fa-user"></i>
               </span>
@@ -30,7 +30,7 @@
           <div class="field">
             <%= f.label :email, class: "label" %>
             <p class="control has-icons-left">
-              <%= f.email_field :email, class: "input" %>
+              <%= f.email_field :email, class: "input is-success" %>
               <span class="icon is-small is-left">
                 <i class="fas fa-envelope"></i>
               </span>
@@ -39,18 +39,18 @@
 
           <div class="field">
             <%= f.label :profile, class: "label" %>
-            <%= f.text_area :profile, class: "textarea" %>
+            <%= f.text_area :profile, class: "textarea is-success" %>
           </div>
 
           <div class="field">
             <%= f.label :job_request, "仕事の依頼方法", class: "label" %>
-            <%= f.text_area :job_request, class: "textarea" %>
+            <%= f.text_area :job_request, class: "textarea is-success" %>
           </div>
 
           <div class="field">
             <%= f.label :line, "(任意)仕事依頼にLineを希望する方のみidを記入", class: "label" %>
             <p class="control has-icons-left">
-              <%= f.text_field :line, class: "input" %>
+              <%= f.text_field :line, class: "input is-success" %>
               <span class="icon is-small is-left">
                 <i class="fab fa-line"></i>
               </span>
@@ -60,7 +60,7 @@
           <div class="field">
             <%= f.label :twitter, "(任意)仕事依頼にTwitterを希望する方のみユーザー名を記入", class: "label" %>
             <p class="control has-icons-left">
-              <%= f.text_field :twitter, class: "input" %>
+              <%= f.text_field :twitter, class: "input is-success" %>
               <span class="icon is-small is-left">
                 <i class="fab fa-twitter-square"></i>
               </span>
@@ -92,7 +92,7 @@
 
           <div class="field">
             <%= f.label :profile_image, "プロフィール画像", class: "label" %>
-            <%= f.attachment_field :profile_image, class: "input" %>
+            <%= f.attachment_field :profile_image, class: "input is-success" %>
           </div>
         
 
