@@ -1,5 +1,9 @@
 class Art < ApplicationRecord
 
+  extend ActiveHash::Associations::ActiveRecordExtensions
+  belongs_to_active_hash :arttype
+  belongs_to_active_hash :arttouch
+
   attachment :image
   belongs_to :artist
 
