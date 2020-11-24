@@ -10,3 +10,22 @@
     </div>
   </div>
 </section>
+
+<%= attachment_image_tag @artist, :profile_image %>
+<%= @artist.name %>
+<%= @artist.arttype.name %>
+<%= @artist.arttouch.name %>
+<%= @artist.job_request %>
+<%= @artist.profile %>
+<%= @artist.price.name %>
+<i class="fas fa-envelope"></i>
+<% if !@artist.line.empty? %>
+  <i class="fab fa-line"></i>
+<% end %>
+<% if !@artist.twitter.empty? %>
+  <i class="fab fa-twitter-square"></i>
+<% end %>
+
+<% @artist.arts.each do |art| %>
+  <%= attachment_image_tag art, :image %>
+<% end %>

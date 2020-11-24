@@ -4,6 +4,11 @@ class Artist < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  extend ActiveHash::Associations::ActiveRecordExtensions
+  belongs_to_active_hash :arttype
+  belongs_to_active_hash :arttouch
+  belongs_to_active_hash :price
+
   has_many :arts, dependent: :destroy
   attachment :profile_image
 
