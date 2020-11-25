@@ -16,28 +16,21 @@
     <div class="tile">
       
       <div class="tile is-parent">
-        <article class="tile is-child notification">
-          <p class="title"><%= "#{@artist.name}'s info" %></p>
+        <article class="tile is-child notification is-white-ter">
+          <p class="title"><%= "#{@artist.name}'s information!" %></p>
           <p class="subtitle">With an image</p>
           <figure class="image image image is-128x128">
+            <%= attachment_image_tag @artist, :profile_image %>
           </figure>
           <p class="subtitle">得意な絵の種類
             <%= @artist.arttype.name %></p>
         </article>
       </div>
     </div>
-    <div class="tile is-parent">
-      <article class="tile is-child notification is-danger">
-        <p class="title">Wide tile</p>
-        <p class="subtitle">Aligned with the right tile</p>
-        <div class="content">
-          <!-- Content -->
-        </div>
-      </article>
-    </div>
   </div>
   <div class="tile is-parent">
-    <article class="tile is-child notification is-success">
+    <article class="tile is-child notification is-white">
+      <p class="title"><%= "#{@artist.name}'s arts!" %></p>
       <section class="section">
         <div class="container">
           <div class="columns is-multiline">
@@ -61,31 +54,6 @@
   </div>
 </div>
 
-<section class="section">
-    <div class="container">
-      <div class="columns is-multiline">
-        <% @artist.arts.each do |art| %>
-          <div class="column is-6">
-            <div class="card">
-              <div class="card-content">
-                <div class="card-image">
-                  <figure class="image is-1by1">
-                    <%= attachment_image_tag art, :image %>
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-        <% end %>
-      </div>
-    </div>
-  </section>
-
-
-
-
-
-<%= @artist.name %>
 <%= @artist.arttype.name %>
 <%= @artist.arttouch.name %>
 <%= @artist.job_request %>
