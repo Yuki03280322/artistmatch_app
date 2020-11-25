@@ -1,7 +1,5 @@
 
 # Artist Match App
-~~出会って10秒でマッチング可能~~
-
  似顔絵を絵師さんに依頼したい時、**自分の求めている絵を得意とする絵師さんをマッチングする**アプリケーション
 
 ↓↓こんな時に使う↓↓
@@ -115,17 +113,3 @@
 - [ ] 要望フォームの実装
 
 ユーザーの期待したマッチングが出来なかった時、その旨を記入頂き改善を目指す
-
-
-# Requirement
-* rails version: 6.0.3.4
-* Ruby version: 2.6.5
-* JavaScript
-* MySQL
-* devise
-* Font Awesome
-* refile
-* refile_mini_magick
-* bulma-rails
-* pry-rails
-* Active Hash
