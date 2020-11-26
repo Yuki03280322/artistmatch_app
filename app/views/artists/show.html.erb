@@ -14,16 +14,21 @@
 <div class="tile is-ancestor">
   <div class="tile is-vertical is-3">
     <div class="tile">
-      
       <div class="tile is-parent">
-        <article class="tile is-child notification is-white-ter">
-          <p class="title"><%= "#{@artist.name}'s information!" %></p>
-          <p class="subtitle">With an image</p>
-          <figure class="image image image is-128x128">
-            <%= attachment_image_tag @artist, :profile_image %>
-          </figure>
-          <p class="subtitle">得意な絵の種類
-            <%= @artist.arttype.name %></p>
+        <article class="tile is-child notification is-white">
+          <div class="content has-text-centered">          
+            <p class="title"><%= "#{@artist.name}'s information!" %></p>
+            <figure class="image is-256x256 is-inline-block">
+              <%= attachment_image_tag @artist, :profile_image %>
+            </figure>
+            <p>・得意な絵の種類  <i class="far fa-hand-point-right"></i>  <%= @artist.arttype.name %></p>
+            <p>・得意な絵のタッチ  <i class="far fa-hand-point-right"></i>  <%= @artist.arttouch.name %></p>
+            <p>・絵の価格  <i class="far fa-hand-point-right"></i>  <%= @artist.price.name %></p>
+            <p>・依頼方法  <i class="far fa-hand-point-down"></i></p>
+            <%= @artist.job_request %><br><br>
+            <p>・プロフィール  <i class="far fa-hand-point-down"></i></p>
+            <%= @artist.profile %><br><br>
+            <p>・連絡先のリンクはこちら <i class="far fa-hand-point-down"></i></p>
               <a class="fas fa-envelope fa-3x" href="#"></a>
               <% if !@artist.line.empty? %>
                 <a class="fab fa-line fa-3x" href="#"></a>
