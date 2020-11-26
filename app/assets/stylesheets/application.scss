@@ -24,17 +24,28 @@
  }
 
  .left-image{
-   height: 600px;
+   height: 500px;
    width: 600px;
    background-image: url(left-image.jpg);
-   background-repeat: none;
+   background-repeat: no-repeat;
    background-size: contain;
+   padding:2px;
+   text-align: center;
  }
 
 .right-image{
-  height: 600px;
+  height: 500px;
   width: 600px;
   background-image: url(right-image.jpg);
-   background-repeat: none;
-   background-size: contain;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding:2px;
+  text-align: center;
 }
+
+.flex-box {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
