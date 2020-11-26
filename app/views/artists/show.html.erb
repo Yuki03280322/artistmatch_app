@@ -2,7 +2,7 @@
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
-        <%= "似顔絵師「#{@artist.name}」" %>
+        <%= "似顔絵師「#{@artist.name}」の詳細ページ/似顔絵作成依頼方法について" %>
       </h1>
       <h2 class="subtitle">
         I hope I'll have a close relationship with artists!
@@ -24,18 +24,27 @@
           </figure>
           <p class="subtitle">得意な絵の種類
             <%= @artist.arttype.name %></p>
+              <a class="fas fa-envelope fa-3x" href="#"></a>
+              <% if !@artist.line.empty? %>
+                <a class="fab fa-line fa-3x" href="#"></a>
+              <% end %>
+              <% if !@artist.twitter.empty? %>
+                <a class="fab fa-twitter-square fa-3x" href="#"></a>
+              <% end %>
+            </p>
+          </div>
         </article>
       </div>
     </div>
   </div>
   <div class="tile is-parent">
-    <article class="tile is-child notification is-white">
+    <article class="tile is-child notification is-light">
       <p class="title"><%= "#{@artist.name}'s arts!" %></p>
       <section class="section">
         <div class="container">
           <div class="columns is-multiline">
             <% @artist.arts.each do |art| %>
-              <div class="column is-6">
+              <div class="column is-4">
                 <div class="card">
                   <div class="card-content">
                     <div class="card-image">
@@ -53,16 +62,3 @@
     </article>
   </div>
 </div>
-
-<%= @artist.arttype.name %>
-<%= @artist.arttouch.name %>
-<%= @artist.job_request %>
-<%= @artist.profile %>
-<%= @artist.price.name %>
-<i class="fas fa-envelope"></i>
-<% if !@artist.line.empty? %>
-  <i class="fab fa-line"></i>
-<% end %>
-<% if !@artist.twitter.empty? %>
-  <i class="fab fa-twitter-square"></i>
-<% end %>
