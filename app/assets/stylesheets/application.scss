@@ -19,6 +19,22 @@
  .main-image{
    height: 940px;
    background-image: url(home.jpg);
+   background-repeat: no-repeat;
+   background-size: contain;
+ }
+
+ .left-image{
+   height: 600px;
+   width: 600px;
+   background-image: url(left-image.jpg);
    background-repeat: none;
    background-size: contain;
  }
+
+.right-image{
+  height: 600px;
+  width: 600px;
+  background-image: url(right-image.jpg);
+   background-repeat: none;
+   background-size: contain;
+}
