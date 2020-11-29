@@ -9,21 +9,24 @@ if(document.URL.match(/matchings/)){
       console.log("right");
     }
   };
-  const leftImage = document.getElementsByClassName("left-image");
-  console.log(leftImage)
-  leftImage.addEventListener("click", changeImage(left));
+  // const leftImage = document.getElementsByClassName("left-image");
+  // console.log(leftImage)
+  // leftImage.addEventListener("click", changeImage(left));
 
-  const rightImage = document.getElementById("right");
-  console.log(rightImage)
+  // const rightImage = document.getElementById("right-image");
+  // console.log(rightImage)
   // right.addEventListener("click", changeImage(right));
-
-
-  window.addEventListener("load", changeImage);
+  document.getElementById("left-image").onclick = function(){
+    changeImage("left");
+  };
+  document.getElementById("right-image").onclick = function(){
+    changeImage("right");
+  };
 };
-// document.getElementById("left").onclick = function(){
+// document.getElementById("left-image").onclick = function(){
 //   changeImage("left");
 // };
-// document.getElementById("right").onclick = function(){
+// document.getElementById("right-image").onclick = function(){
 //   changeImage("right");
-//   };
+// };
 

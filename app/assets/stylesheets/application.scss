@@ -23,7 +23,7 @@
    background-size: contain;
  }
 
- .left-image{
+ #left-image{
    height: 400px;
    width: 500px;
    background-image: url(left-image.jpg);
@@ -32,7 +32,7 @@
    text-align: center;
  }
 
-.right-image{
+#right-image{
   height: 400px;
   width: 500px;
   background-image: url(right-image.jpg);
