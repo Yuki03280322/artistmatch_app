@@ -22,26 +22,3 @@
    background-repeat: no-repeat;
    background-size: contain;
  }
-
- #left-image{
-   height: 500px;
-   width: 500px;
-   background-repeat: no-repeat;
-   background-size: contain;
-   text-align: center;
- }
-
-#right-image{
-  height: 500px;
-  width: 500px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  text-align: center;
-}
-
-.flex-box {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-

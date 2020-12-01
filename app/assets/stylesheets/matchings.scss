@@ -1,3 +1,45 @@
 // Place all the styles related to the matchings controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.card_1{
+  display: none;
+}
+
+.card_2{
+  display: none;
+}
+
+.card_3{
+  display: none;
+}
+
+.card_4{
+  display: none;
+}
+
+
+#left-image{
+  height: 500px;
+  width: 500px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  // display:none
+}
+
+#right-image{
+ height: 500px;
+ width: 500px;
+ background-repeat: no-repeat;
+ background-size: contain;
+ text-align: center;
+//  display:none
+}
+
+.flex-box {
+ display: flex;
+ justify-content: space-around;
+ flex-wrap: wrap;
+}
+
