@@ -2,7 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.card_1{
+// .card_1{
+//   display: none;
+// }
+
+.card_1.hidden{
   display: none;
 }
 
@@ -25,7 +29,6 @@
   background-repeat: no-repeat;
   background-size: contain;
   text-align: center;
-  // display:none
 }
 
 #right-image{
@@ -34,7 +37,6 @@
  background-repeat: no-repeat;
  background-size: contain;
  text-align: center;
-//  display:none
 }
 
 .flex-box {

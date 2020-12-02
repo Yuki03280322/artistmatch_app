@@ -11,7 +11,18 @@ if(document.URL.match(/matchings/)){
       if(current == 1){
         leftImage.addEventListener("click", () => {
           const leftImageTwo = document.getElementById("left-image");
-          leftImageTwo.src = images[3]
+          const rightImage = document.getElementById("right-image");
+          leftImageTwo.style.display = "none";
+          rightImage.style.display = "none";
+          const card1 = document.querySelectorAll(".card_1")
+          card1.forEach(function(image){
+            image.classList.remove("hidden")
+          })
+          // card1[0].classList.remove("hidden")
+          // card1[1].classList.remove("hidden")
+          
+          
+
         })
       }
     });
