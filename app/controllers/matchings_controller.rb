@@ -1,5 +1,5 @@
 class MatchingsController < ApplicationController
   def index
-    @arts = Art.all
+    @arts = Art.includes(:artist)
   end
 end
