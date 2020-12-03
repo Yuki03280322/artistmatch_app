@@ -11,7 +11,8 @@
 # Features
 **自分の求めている似顔絵を書くことを得意とする絵師さんを10秒でマッチング**
 
-![demo]https://i.gyazo.com/e5e9a6cad617558088a4b8cb81f8ad17.gif/raw)
+![e5e9a6cad617558088a4b8cb81f8ad17 (2)](https://user-images.githubusercontent.com/72023246/100968495-c99e3800-3574-11eb-8f3f-ea7c86058654.gif)
+
 
 # How to use
 【トップページ】
