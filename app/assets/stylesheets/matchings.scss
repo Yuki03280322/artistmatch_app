@@ -2,23 +2,20 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-// .card_1{
-//   display: none;
-// }
 
-.card_1.hidden{
+.section_1.hidden{
   display: none;
 }
 
-.card_2{
+.section_2.hidden{
   display: none;
 }
 
-.card_3{
+.section_3.hidden{
   display: none;
 }
 
-.card_4{
+.section_4.hidden{
   display: none;
 }
 
@@ -41,7 +38,7 @@
 
 .flex-box {
  display: flex;
- justify-content: space-around;
+ justify-content: space-evenly;
  flex-wrap: wrap;
 }
 
