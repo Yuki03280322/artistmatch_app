@@ -11,7 +11,7 @@
 # Features
 **自分の求めている似顔絵を書くことを得意とする絵師さんを10秒でマッチング**
 
-実装後GIF表示
+![demo](https://gyazo.com/e5e9a6cad617558088a4b8cb81f8ad17/raw)
 
 # How to use
 【トップページ】
