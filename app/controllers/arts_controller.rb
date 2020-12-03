@@ -2,7 +2,7 @@ class ArtsController < ApplicationController
 
   def new
     @art = Art.new
-    @arts = Art.all
+    @arts = Art.includes(:artist)
   end
 
   def create
@@ -15,7 +15,7 @@ class ArtsController < ApplicationController
   end
 
   def index
-    @arts = Art.all
+    @arts = Art.includes(:artist).order("created_at DESC")
   end
 
   def destroy
