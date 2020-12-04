@@ -16,7 +16,7 @@
     <div class="columns is-centered">
       <div class="column is-5">
         <%= form_with model: current_artist, url: artist_path, local: true do |f| %>
-
+        <%= render 'shared/error_messages', model: @artist %>
           <div class="field">
             <%= f.label :name, class: "label" %>
             <p class="control has-icons-left">

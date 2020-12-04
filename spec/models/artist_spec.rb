@@ -29,51 +29,97 @@ RSpec.describe Artist, type: :model do
       end
 
       it "emailが空では登録できない" do
+        @artist.email = nil
+        @artist.valid?
+        expect(@artist.errors.full_messages).to include("メールアドレスを入力してください")
       end
 
       it "passwordが空では登録できない" do
+        @artist.password = nil
+        @artist.valid?
+        expect(@artist.errors.full_messages).to include("パスワードを入力してください")
       end
 
       it "job_requestが空では登録できない" do
+        @artist.job_request = nil
+        @artist.valid?
+        expect(@artist.errors.full_messages).to include("仕事の依頼方法を入力してください")
       end
 
       it "arttype_idが空では登録できない" do
+        @artist.arttype_id = nil
+        @artist.valid?
+        expect(@artist.errors.full_messages).to include("絵の種類を入力してください")
       end
 
       it "arttouch_idが空では登録できない" do
+        @artist.arttouch_id = nil
+        @artist.valid?
+        expect(@artist.errors.full_messages).to include("絵のタッチを入力してください")
       end
 
       it "profileが空では登録できない" do
+        @artist.profile = nil
+        @artist.valid?
+        expect(@artist.errors.full_messages).to include("プロフィールを入力してください")
       end
 
       it "price_idが空では登録できない" do
+        @artist.price_id = nil
+        @artist.valid?
+        expect(@artist.errors.full_messages).to include("1人の価格を入力してください")
       end
 
       it "重複したemailでは登録できない" do
+        @artist.save
+        another_artist = FactoryBot.build(:artist)
+        another_artist.email = @artist.email
+        another_artist.valid?
+        expect(another_artist.errors.full_messages).to include("メールアドレスはすでに存在します")
       end
 
       it "emailに@を含んでいなければ登録できない" do
+        @artist.email = 'abcdefgh'
+        @artist.valid?
+        expect(@artist.errors.full_messages).to include("メールアドレスは不正な値です")
       end
 
       it "passwordが5文字以下では登録できない" do
-      end
-
-      it "passwordが半角英数字混合で入力されていない場合、登録できない" do
+        @artist.password = 'ab345'
+        @artist.password_confirmation = 'ab345'
+        @artist.valid?
+        expect(@artist.errors.full_messages).to include("パスワードは6文字以上で入力してください")
       end
 
       it "passwordが存在してもpassword_confirmationが空では登録できない" do
+        @artist.password_confirmation = ""
+        @artist.valid?
+        expect(@artist.errors.full_messages).to include("パスワード（確認用）とパスワードの入力が一致しません")
       end
 
       it "passwordとpassword_confirmationが一致していない場合、登録できない" do
+        @artist.password = 'abc123'
+        @artist.password_confirmation = 'abc456'
+        @artist.valid?
+        expect(@artist.errors.full_messages).to include("パスワード（確認用）とパスワードの入力が一致しません")
       end
 
       it "arttype_idが1だと登録できない" do
+        @artist.arttype_id = 1
+        @artist.valid?
+        expect(@artist.errors.full_messages).to include("絵の種類を選択して下さい")
       end
 
       it "arttouch_idが1だと登録できない" do
+        @artist.arttouch_id = 1
+        @artist.valid?
+        expect(@artist.errors.full_messages).to include("絵のタッチを選択して下さい")
       end
 
       it "price_idが1だと登録できない" do
+        @artist.price_id = 1
+        @artist.valid?
+        expect(@artist.errors.full_messages).to include("1人の価格を選択して下さい")
       end
     end
   end
