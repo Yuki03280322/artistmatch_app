@@ -25,7 +25,7 @@ RSpec.describe Artist, type: :model do
       it "nameが空では登録できない" do
         @artist.name = nil
         @artist.valid?
-        expect(@artist.errors.full_messages).to include("Name can't be blank")
+        expect(@artist.errors.full_messages).to include("登録名を入力してください")
       end
 
       it "emailが空では登録できない" do
