@@ -5,7 +5,7 @@ FactoryBot.define do
     association :artist
 
     after(:build) do |art|
-      art.image.attach(io: File.open('public/images/test_image.png'),filename: 'test_image.png')
+      art.image = Refile::FileDouble.new("dummy", "test_image.png", content_type: "image/png")
     end
   end
 end
