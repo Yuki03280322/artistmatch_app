@@ -11,28 +11,26 @@
 # Features
 **自分の求めている似顔絵を書くことを得意とする絵師さんを10秒でマッチング**
 
-![e5e9a6cad617558088a4b8cb81f8ad17 (2)](https://user-images.githubusercontent.com/72023246/100968495-c99e3800-3574-11eb-8f3f-ea7c86058654.gif)
-
+![adb97363a6bcc5e55c66950ed811a998](https://user-images.githubusercontent.com/72023246/101280282-9d501900-380b-11eb-829c-c8f948249c3a.gif)
 
 # How to use
 【トップページ】
  * 目的をクリック
  * ログイン/ログアウトは似顔絵師さんのみ使用し、ユーザーはマッチング機能/絵の一覧/似顔絵師一覧＆詳細を閲覧可能
 
-![9f30cc8b41f2514d4db810351ad38135](https://user-images.githubusercontent.com/72023246/100968917-94deb080-3575-11eb-94a0-103549e49b0c.jpg)
+![9619f668d1753fcdfa29aa8f4cc66e25](https://user-images.githubusercontent.com/72023246/101280305-c96b9a00-380b-11eb-9d83-3b3cd6b79113.jpg)
 
 
 【マッチングページ】
  * 自分の求める似顔絵に近い絵をクリック
  * 3回目のクリック後マッチングした絵師さんページへ遷移
 
-![4a0001662b6a99ddd450e5587cb3e9a3](https://user-images.githubusercontent.com/72023246/100969183-074f9080-3576-11eb-87f3-bb4f125ff358.gif)
-
+![1ba2130a6e8a2b2a5607cab76223f66d](https://user-images.githubusercontent.com/72023246/101280433-50207700-380c-11eb-87e5-06387dfb01eb.gif)
 
 【絵師さんページ】
  * 仕事依頼方法やプロフィール、作成した絵を表示
 
-![e1065b3982ecd3f4bee322b51c5306e4](https://user-images.githubusercontent.com/72023246/100969343-5269a380-3576-11eb-991d-cdc7eccf4fbb.jpg)
+![34f03baa8a2f81a3657a94c99ed2b053](https://user-images.githubusercontent.com/72023246/101280477-a097d480-380c-11eb-8675-8a7a4841b50f.jpg)
 
 
 # Production background
