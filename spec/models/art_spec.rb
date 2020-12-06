@@ -16,8 +16,31 @@ RSpec.describe Art, type: :model do
       it "imageが空では登録できない" do
         @art.image = nil
         @art.valid?
-        binding.pry
-        expect(@art.errors.full_messages).to include("")
+        expect(@art.errors.full_messages).to include("似顔絵を入力してください")
+      end
+
+      it "arttype_idが空では登録できない" do
+        @art.arttype_id = nil
+        @art.valid?
+        expect(@art.errors.full_messages).to include("絵の種類を入力してください")
+      end
+
+      it "arttouch_idが空では登録できない" do
+        @art.arttouch_id = nil
+        @art.valid?
+        expect(@art.errors.full_messages).to include("絵のタッチを入力してください")
+      end
+
+      it "arttype_idが1だと登録できない" do
+        @art.arttype_id = 1
+        @art.valid?
+        expect(@art.errors.full_messages).to include("絵の種類を選択して下さい")
+      end
+
+      it "arttouch_idが1だと登録できない" do
+        @art.arttouch_id = 1
+        @art.valid?
+        expect(@art.errors.full_messages).to include("絵のタッチを選択して下さい")
       end
     end
   end

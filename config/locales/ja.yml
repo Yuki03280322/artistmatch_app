@@ -1,0 +1,11 @@
+ja:
+  time:
+    formats:
+      default: "%m/%d %H:%M"
+  activerecord:
+    attributes:
+      art:
+        image: 似顔絵
+        arttype_id: 絵の種類
+        arttouch_id: 絵のタッチ
+      
