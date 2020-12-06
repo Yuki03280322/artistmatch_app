@@ -1,4 +1,4 @@
-<section class="hero is-primary is-bold">
+<section class="hero is-light">
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
@@ -17,7 +17,7 @@
       <div class="tile is-parent">
         <article class="tile is-child notification is-white">
           <div class="content has-text-centered">          
-            <p class="title"><%= "#{@artist.name}'s information!" %></p>
+            <h4 class="title"><%= "#{@artist.name}'s information!" %></h4>
             <figure class="image is-256x256 is-inline-block">
               <%= attachment_image_tag @artist, :profile_image, fallback: "no-image.png"%>
             </figure>
@@ -43,8 +43,10 @@
     </div>
   </div>
   <div class="tile is-parent">
-    <article class="tile is-child notification is-light">
-      <p class="title"><%= "#{@artist.name}'s arts!" %></p>
+    <article class="tile is-child notification is-white">
+      <div class="content has-text-centered">
+        <h4 class="title"><%= "#{@artist.name}'s arts!" %></h4>
+      </div>
       <section class="section">
         <div class="container">
           <div class="columns is-multiline">

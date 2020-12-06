@@ -12,10 +12,10 @@
   </head>
 
   <body>
-    <nav class="navbar">
+    <nav class="navbar is-dark">
       <div class="navbar-brand">
         <%= link_to root_path, class: "navbar-item" do %>
-          <h1 class="title is-2" style="font-family: Arial Black;">Artist Match App</h1>
+          <h1 class="title is-4" style="font-family: Arial Black;"><font color="white">Artist Match App</font></h1>
         <% end %>
       </div>
       <div id="navbarBasicExample" class="navbar-menu">
@@ -52,5 +52,19 @@
       </div>
     </nav>
     <%= yield %>
+    <section class="hero is-light">
+      <div class="hero-body">
+        <div class="container">
+          <div class="content has-text-centered">
+            <h3 class="title">
+              似顔絵掲載協力
+            </h3>
+            <h6 class="subtitle">
+              青木猿頬様/ジャッキィ様/川上奈々の似顔絵屋さん様/うません_似顔絵師様にご協力頂き掲載させて頂きました。誠にありがとうございます。
+            </h6>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
