@@ -1,4 +1,4 @@
-<section class="hero is-primary is-bold">
+<section class="hero is-light">
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
@@ -18,15 +18,15 @@
 </section>
 
 <div class="flex-box">
-  <img id="left-image" src="https://cdn-common.skima.jp/item/043/051/43051/showcase-ee325765ff253587e908782ba0c189ab-20170707094921.jpeg">
-  <img id="right-image" src="https://pbs.twimg.com/media/EiZ4TxlVoAEXXu2?format=jpg&name=medium">
+  <img id="left-image" src="https://pbs.twimg.com/media/Eodx2WeUUAAZYTV?format=jpg&name=large">
+  <img id="right-image" src="https://pbs.twimg.com/media/EoSqRUbVQAAISrz?format=jpg&name=4096x4096">
 </div>
 
 <section class="section_1 hidden">
   <div class="container">
     <div class="columns is-multiline">
       <% @arts.each do |art| %>
-        <% if art.arttype_id == 2 && art.arttouch_id == 2 %>
+        <% if art.arttype_id == 2 && art.arttouch_id == 3 %>
           <div class="column is-4">
             <div class="card">
               <div class="card-content">
@@ -50,7 +50,7 @@
   <div class="container">
     <div class="columns is-multiline">
       <% @arts.each do |art| %>
-        <% if art.arttype_id == 2 && art.arttouch_id == 3 %>
+        <% if art.arttype_id == 2 && art.arttouch_id == 2 %>
           <div class="column is-4">
             <div class="card">
               <div class="card-content">
