@@ -16,6 +16,7 @@
     <div class="columns is-centered">
       <div class="columns is-6">
         <%= form_with model: @art, url: arts_path, local: true do |f| %>
+        <%= render 'shared/error_messages', model: @art %>
 
           <div class="field">
             <%= f.label :image, "似顔絵", class: "label" %>
