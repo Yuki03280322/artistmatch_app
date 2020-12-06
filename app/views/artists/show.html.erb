@@ -19,7 +19,7 @@
           <div class="content has-text-centered">          
             <p class="title"><%= "#{@artist.name}'s information!" %></p>
             <figure class="image is-256x256 is-inline-block">
-              <%= attachment_image_tag @artist, :profile_image %>
+              <%= attachment_image_tag @artist, :profile_image, fallback: "no-image.png"%>
             </figure>
             <p>・得意な絵の種類  <i class="far fa-hand-point-right"></i>  <%= @artist.arttype.name %></p>
             <p>・得意な絵のタッチ  <i class="far fa-hand-point-right"></i>  <%= @artist.arttouch.name %></p>

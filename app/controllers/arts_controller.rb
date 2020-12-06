@@ -1,4 +1,5 @@
 class ArtsController < ApplicationController
+  before_action :authenticate_artist!, except: :index
 
   def new
     @art = Art.new
@@ -30,5 +31,4 @@ class ArtsController < ApplicationController
   def art_params
     params.require(:art).permit(:image, :arttype_id, :arttouch_id).merge(artist_id: current_artist.id)
   end
-
 end
