@@ -61,3 +61,4 @@ gem "bulma-rails"
 gem 'pry-rails'
 gem 'active_hash'
 gem 'rails-i18n'
+gem "refile-s3"
