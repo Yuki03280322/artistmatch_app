@@ -3,7 +3,7 @@ class ArtsController < ApplicationController
 
   def new
     @art = Art.new
-    @arts = Art.includes(:artist).order("created_at DESC")
+    @arts = Art.includes(:artist).order('created_at DESC')
   end
 
   def create
@@ -11,13 +11,13 @@ class ArtsController < ApplicationController
     if @art.save
       redirect_to action: :new
     else
-      @arts = Art.includes(:artist).order("created_at DESC")
+      @arts = Art.includes(:artist).order('created_at DESC')
       render :new
     end
   end
 
   def index
-    @arts = Art.includes(:artist).order("created_at DESC")
+    @arts = Art.includes(:artist).order('created_at DESC')
   end
 
   def destroy

@@ -24,10 +24,9 @@ class Artist < ApplicationRecord
     validates :price_id
   end
 
-  with_options numericality: { other_than: 1 , message:'を選択して下さい'} do
+  with_options numericality: { other_than: 1, message: 'を選択して下さい' } do
     validates :arttype_id
     validates :arttouch_id
     validates :price_id
   end
-  
 end

@@ -3,14 +3,13 @@ class ArtistsController < ApplicationController
   before_action :set_id, only: [:edit, :update]
   before_action :move_to_home, only: :edit
 
-
   def index
     @artists = Artist.all
   end
 
   def edit
   end
-  
+
   def update
     if @artist.update(artist_params)
       redirect_to aciton: :edit
