@@ -140,6 +140,7 @@
 - [ ] インフラにAWSとDockerを使用
 
 =>　現在はHerokuとS3を使用しているが、EC2,Route53を使用したいと考え現在勉強中
+　　勉強内容をブログでアウトプットしておりますので、ぜひ御覧ください。https://miyamon-good.hatenablog.com/
 
 # Posting cooperation
 このアプリケーションで掲載している似顔絵は、
