@@ -31,6 +31,7 @@
 
 【絵師さんページ】
  * 仕事依頼方法やプロフィール、作成した絵を表示
+ * テストアカウントはこちらをご利用下さい(email:a@a, password:abc123)
 
 ![34f03baa8a2f81a3657a94c99ed2b053](https://user-images.githubusercontent.com/72023246/101280477-a097d480-380c-11eb-8675-8a7a4841b50f.jpg)
 
@@ -138,7 +139,7 @@
 
 - [ ] インフラにAWSとDockerを使用
 
-=>　現在はHerokuとS3を使用しているが、EC2,Route53を使用したいと考え、現在勉強中。
+=>　現在はHerokuとS3を使用しているが、EC2,Route53を使用したいと考え現在勉強中
 
 # Posting cooperation
 このアプリケーションで掲載している似顔絵は、
