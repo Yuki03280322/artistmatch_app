@@ -49,14 +49,20 @@
 
 その思いからこのアプリケーションを作成することを決めました!!
 # Technology used
-* 非同期通信による画像切替
-* ユーザーの求める似顔絵を順番に表示
+* 非同期通信による画像切替でスピーディなマッチング
+* ユーザーの求める似顔絵をクリックで順番に表示
+* N+1問題の回避
 * 投稿された画像はS3に保存
 * 現在はHerokuへデプロイ(https://artistmatch-app.herokuapp.com/)
 
-<実装後表示>
+<使用技術>
+* Ruby 2.6.5/Rails 6.0.0/MySQL 5.6.47/Ajax/JavaScript/HTML/CSS/AWS
+* refile/refile-mini_magick/refile-s3/active_hash/bulma-rails/devise/rails-i18n
+* rspec-rails/factory_bot_rails/rubocop
 
-実装完了後、使用したライブラリや技術を一覧画像作成
+* AWSのVPC/EC2/Route 53とDockerを追加実装予定
+
+現在勉強中！勉強内容はブログでアウトプット→https://miyamon-good.hatenablog.com/
 
 # DEMO
 ユーザーへの提供→**素早くお好みの絵師さんをご紹介**
@@ -122,7 +128,6 @@
 
 => refile-s3を使用し、画像をs3に保存
 
-
 # Scheduled to be implemented
 - [ ] マッチング機能の強化
 
@@ -139,7 +144,7 @@
 
 - [ ] インフラにAWSとDockerを使用
 
-=>　現在はHerokuとS3を使用しているが、EC2,Route53を使用したいと考え現在勉強中
+=>　現在はHerokuとS3を使用しているが、EC2やRoute53,dockerを使用したいと考え現在勉強中
 　　勉強内容をブログでアウトプットしておりますので、ぜひ御覧ください。https://miyamon-good.hatenablog.com/
 
 # Posting cooperation
