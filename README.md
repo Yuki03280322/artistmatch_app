@@ -56,7 +56,7 @@
 * 現在はHerokuへデプロイ(https://artistmatch-app.herokuapp.com/)
 
 <使用技術>
-* Ruby 2.6.5/Rails 6.0.0/MySQL 5.6.47/Ajax/JavaScript/HTML/CSS/AWS
+* Ruby 2.6.5/Rails 6.0.0/MySQL 5.6.47/Ajax/JavaScript/HTML/CSS/AWS/Heroku
 * refile/refile-mini_magick/refile-s3/active_hash/bulma-rails/devise/rails-i18n
 * rspec-rails/factory_bot_rails/rubocop
 
