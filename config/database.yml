@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: artistmatch_app_production
-  username: artistmatch_app
-  password: <%= ENV['ARTISTMATCH_APP_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
