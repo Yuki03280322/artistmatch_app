@@ -69,7 +69,7 @@ http://yuki-portfolio-artistmatchapp.work/
 * VPC/EC2/Route 53/S3
 * unicorn/capistrano/node.js/MariaDB
 
-<img src="https://user-images.githubusercontent.com/72023246/104982478-1cad4b00-5a4e-11eb-88d2-d13219ee812a.png" width="300px"><img src="https://user-images.githubusercontent.com/72023246/104982857-dd332e80-5a4e-11eb-884f-cfb7ebc93944.png" width="300px">![AWS](https://user-images.githubusercontent.com/72023246/104983098-6ea2a080-5a4f-11eb-81dc-8de5eca88fd4.png)
+<img src="https://user-images.githubusercontent.com/72023246/104982478-1cad4b00-5a4e-11eb-88d2-d13219ee812a.png" width="300px" hight="300px"><img src="https://user-images.githubusercontent.com/72023246/104982857-dd332e80-5a4e-11eb-884f-cfb7ebc93944.png" width="300px">![AWS](https://user-images.githubusercontent.com/72023246/104983098-6ea2a080-5a4f-11eb-81dc-8de5eca88fd4.png)
 
 
 
