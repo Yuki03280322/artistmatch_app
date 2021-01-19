@@ -8,7 +8,7 @@
 
 2.絵師として少しでも多くの人に自分の絵を求めて欲しい！
 
-アプリケーションURL:https://artistmatch-app.herokuapp.com/
+アプリケーションURL:http://yuki-portfolio-artistmatchapp.work/
 
 # Features
 **自分の求めている似顔絵を書くことを得意とする絵師さんを10秒でマッチング**
@@ -52,17 +52,24 @@
 * 非同期通信による画像切替でスピーディなマッチング
 * ユーザーの求める似顔絵をクリックで順番に表示
 * N+1問題の回避
-* 投稿された画像はS3に保存
-* 現在はHerokuへデプロイ(https://artistmatch-app.herokuapp.com/)
+* デプロイはAWSとHeroku
+* AWSはVPC/EC2/Route 53/S3を使用
+- [ ] AWS
+
+http://yuki-portfolio-artistmatchapp.work/
+
+- [ ] Heroku
+
+(https://artistmatch-app.herokuapp.com/)
 
 <使用技術>
 * Ruby 2.6.5/Rails 6.0.0/MySQL 5.6.47/Ajax/JavaScript/HTML/CSS/AWS/Heroku
 * refile/refile-mini_magick/refile-s3/active_hash/bulma-rails/devise/rails-i18n
 * rspec-rails/factory_bot_rails/rubocop
+* VPC/EC2/Route 53/S3
+* unicorn/capistrano/node.js/MariaDB
 
-* AWSのVPC/EC2/Route 53とDockerを追加実装予定
-
-現在勉強中！勉強内容はブログでアウトプット→https://miyamon-good.hatenablog.com/
+![bdc11dd3](https://user-images.githubusercontent.com/72023246/104981823-b4aa3500-5a4c-11eb-96fd-76dd7f90eed3.png)![capistrano-1200x630](https://user-images.githubusercontent.com/72023246/104981863-c8559b80-5a4c-11eb-9755-929c305f783b.png)![eyecatch-2016-09-07-001-800x566](https://user-images.githubusercontent.com/72023246/104981876-d0154000-5a4c-11eb-8e67-620aa70dc032.jpg)![fd39f7be9f2aaa62e16506e9aa2882f4](https://![heroku-logotype-vertical-purple](https://user-images.githubusercontent.com/72023246/104981911-e28f7980-5a4c-11eb-8a9f-ec402a4595e4.png)![js](https://user-images.githubusercontent.com/72023246/104981933-eae7b480-5a4c-11eb-9e20-dfa2d8361827.png)![MariaDB_Logo d8a208f0a889a8f0f0551b8391a065ea79c54f3a](https://user-images.githubusercontent.com/72023246/104981948-f1762c00-5a4c-11eb-9190-f6c3849985bc.png)![OGPI_XS32](https://user-images.githubusercontent.com/72023246/104981966-f89d3a00-5a4c-11eb-81b3-c05809557760.jpg)![s3](https://user-images.githubusercontent.com/72023246/104981976-005cde80-5a4d-11eb-87f2-c07d298aecb0.png)<img width="379" alt="20191219153841" src="https://user-images.githubusercontent.com/72023246/104981992-09e64680-5a4d-11eb-9201-1bd50accfa3c.png">![20200328154006](https://user-images.githubusercontent.com/72023246/104982011-136fae80-5a4d-11eb-9323-50f11bf82729.jpg)![ダウンロード](https://user-images.githubusercontent.com/72023246/104982026-1b2f5300-5a4d-11eb-9b39-b60899b6d9c3.png)
 
 # DEMO
 ユーザーへの提供→**素早くお好みの絵師さんをご紹介**
@@ -144,8 +151,7 @@
 
 - [ ] インフラにAWSとDockerを使用
 
-=>　現在はHerokuとS3を使用しているが、EC2やRoute53,dockerを使用したいと考え現在勉強中
-　　勉強内容をブログでアウトプットしておりますので、ぜひ御覧ください。https://miyamon-good.hatenablog.com/
+=> AWS完了！現在Docker勉強中！
 
 # Posting cooperation
 このアプリケーションで掲載している似顔絵は、
