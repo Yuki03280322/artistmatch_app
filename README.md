@@ -8,7 +8,11 @@
 
 2.絵師として少しでも多くの人に自分の絵を求めて欲しい！
 
-アプリケーションURL:http://yuki-portfolio-artistmatchapp.work/
+アプリケーションURL:~~http://yuki-portfolio-artistmatchapp.work/~~
+
+※現在AWSへのデプロイは終了したため、Herokuからのみアクセス可能です
+
+アプリケーションURL:https://artistmatch-app.herokuapp.com/
 
 # Features
 **自分の求めている似顔絵を書くことを得意とする絵師さんを10秒でマッチング**
@@ -56,7 +60,7 @@
 * AWSはVPC/EC2/Route 53/S3を使用
 - [ ] AWS
 
-http://yuki-portfolio-artistmatchapp.work/
+~~http://yuki-portfolio-artistmatchapp.work/~~
 
 - [ ] Heroku
 
